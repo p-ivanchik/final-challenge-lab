@@ -41,7 +41,7 @@ git remote remove google
 git remote add google "ssh://${account}@${REPO}"
 
 
-sed -i -e "s|<date>|`date`|" app.py
+sed -i -e "s|+|-|" app.py
 git add app.py
 git commit -m "Updated `date`"
 git push google master
