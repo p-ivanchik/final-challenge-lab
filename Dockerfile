@@ -2,7 +2,7 @@ FROM python:3.8
 
 RUN pip3 install flask
 
-#WORKDIR /app
+WORKDIR /app
 EXPOSE 5050
 
 
