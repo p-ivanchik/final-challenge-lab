@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 
-. project-vars
 
-8. Expose your service over Cloud Load Balancer with external static IP address (10 points):
-●	Expose your service over Cloud Load Balancer with external static IP address.
+#8. Expose your service over Cloud Load Balancer with external static IP address (10 points):
 
-
-#dslfladksjflas dfasdf
-
-
-dfasdf
-
+- Reserve a static external IP address and use it in Ingress manifest
+- Create an Ingress resource

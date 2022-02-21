@@ -16,6 +16,8 @@ gcloud services enable \
   sourcerepo.googleapis.com \
   compute.googleapis.com \
   artifactregistry.googleapis.com \
+  sqladmin.googleapis.com \
   container.googleapis.com
 
+gcloud config set project ${project}
 gcloud auth configure-docker ${LOCATION}-docker.pkg.dev

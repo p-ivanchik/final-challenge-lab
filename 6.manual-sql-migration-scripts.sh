@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-. project-vars
+#6. Manual SQL migration scripts (10 points):
 
-6. Manual SQL migration scripts (10 points):
-●	Create and apply SQL database migration scripts using one of database migration tools when the SQL database migration scripts add.
+- Test Auth proxy with mysql client as usual
+- ./cloud_sql_proxy -instances=${project}:${LOCATION}:${DB_INSTANCE_NAME}=tcp:3306 &
+- mysql -umysql --host 127.0.0.1
