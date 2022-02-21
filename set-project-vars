@@ -1,0 +1,18 @@
+
+REPO_NAME=final-challenge-lab
+account=`gcloud config  list --format=json|jq -r '.core.account'`
+project=`gcloud config  list --format=json|jq -r '.core.project'`
+LOCATION=us-central1
+#us-east1
+#us-central1
+
+LOCAL_IMAGE=${REPO_NAME}
+GCP_IMAGE=${LOCATION}-docker.pkg.dev/${project}/${REPO_NAME}/${REPO_NAME}
+
+export REPO_NAME account project LOCATION LOCAL_IMAGE GCP_IMAGE
+
+TRIGGER_NAME=trigger-${REPO_NAME}
+TRIGGER_CONFIG_NAME="/tmp/trigger-${REPO_NAME}.yaml"
+export TRIGGER_NAME TRIGGER_CONFIG_NAME
+
+

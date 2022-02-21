@@ -1,0 +1,17 @@
+---
+build:
+  images:
+  - :$COMMIT_SHA
+  options: {}
+  steps:
+  - args:
+    - build
+    - -t
+    - :$COMMIT_SHA
+    - .
+    name: gcr.io/cloud-builders/docker
+name:
+triggerTemplate:
+  branchName: .*master
+  projectId: 
+  repoName: 
